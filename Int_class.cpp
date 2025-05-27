@@ -51,19 +51,27 @@ class Int{
 
 int main(){
 	
+	// The uninitialized Int.
 	Int val1;
+	
+	// The two initialized Ints.
 	Int val2(34);
 	Int val3(23);
 	
+	// Displays them before adding.
 	val1.display();
 	val2.display();
 	val3.display();
 	
 	cout << "============" << endl;
 	
+	// First adds val2 to val1
 	val1.add_Int(val2);
+	
+	// Then adds val3 to val1.
 	val1.add_Int(val3);
 	
+	// val1 is now equal to val2 + val3.
 	val1.display();
 	
 	return 0;
