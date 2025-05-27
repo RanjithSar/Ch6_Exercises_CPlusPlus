@@ -24,3 +24,21 @@ class tollBooth{
 		}
 		
 };
+
+int main(){
+	
+	tollBooth toll_booth;
+	
+	while (True){
+		if (GetAsyncKeyState(VK_P) & 0x8000){
+			toll_booth.payingCar();
+		}
+		if (GetAsyncKeyState(VK_N) & 0x8000){
+			toll_booth.nopayCar();
+		}
+		if (GetAsyncKeyState(VK_ESCAPE) & 0x8000){
+			toll_booth.display();
+			return 0;
+		}
+	}
+}
