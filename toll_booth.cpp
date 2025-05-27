@@ -61,23 +61,33 @@ class tollBooth{
 
 int main(){
 	
+	// Initializes test toll booth.
 	tollBooth toll_booth;
 	
+	// Gives user information on how to use the program.
 	cout << "Welcome to the toll paying program. Press the 'p' key to count a \n"
 			"car that paid the $0.50 cent toll, and the 'n' key to count a car that did not." << endl;
 	
+	// Constantly checks for key presses.
 	while (true){
+		
+		// Check for a car that paid the toll.
 		if (GetAsyncKeyState('P') && 0x8000){
 			toll_booth.payingCar();
 		}
+		
+		// Check for a car that did not pay the toll.
 		if (GetAsyncKeyState('N') && 0x8000){
 			toll_booth.nopayCar();
 		}
+		
+		// Check if user wants to end the program.
 		if (GetAsyncKeyState(VK_ESCAPE) && 0x8000){
 			toll_booth.display();
 			return 0;
 		}
 		
+		// Timer from windows.h to stop over-execution of the loop.
 		Sleep(250);
 	}
 }
