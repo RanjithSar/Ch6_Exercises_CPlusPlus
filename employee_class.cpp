@@ -1,3 +1,17 @@
+/*
+* Chapter 6 Problem 4
+* -------------------
+* This program simulates an employee with the
+* employee class. Each employee gets an ID number and
+* a compensation in dollars.
+*
+* By default, a new employee has ID 0 and compensation 
+* $0.00. The user can also initialize an employee.
+*
+* Each employee has a display method and method set_data 
+* that allows modification of the attributes.
+*/
+
 #include <iostream>
 using namespace std;
 
@@ -31,16 +45,38 @@ class employee{
 int main(){
 	
 	employee e1;
-	employee e2(4820,3000.00);
+	employee e2(12859, 90000.00);
+	employee e3(e1);
 	
 	e1.display();
 	e2.display();
+	e3.display();
 	
 	cout << "=================" << endl;
 	
 	e1.set_data();
 	
 	e1.display();
+	e2.display();
+	e3.display();
+	
+	cout << "=================" << endl;
+	
+	e2.set_data();
+	
+	e1.display();
+	e2.display();
+	e3.display();
+	
+	cout << "=================" << endl;
+	
+	e3.set_data();
+	
+	e1.display();
+	e2.display();
+	e3.display();
+
+	cout << "=================" << endl;
 	
 	return 0;
 	
