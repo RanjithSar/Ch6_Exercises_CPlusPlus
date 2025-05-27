@@ -16,5 +16,11 @@ class time{
 			this->minutes = min;
 			this->seconds = sec;
 		}
+		
+		void display() const{
+			printf("%02d:%02d:%02d\n", this->hours, this->minutes, this->seconds);
+		}
+		
+		
 	
 };
