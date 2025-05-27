@@ -20,7 +20,7 @@ class tollBooth{
 		}
 		void display() const{
 			cout << "Cars passed = " << this->num_cars << "\n"
-				 << "Total toll collected = " < this->total << endl;
+				 << "Total toll collected = " << this->total << endl;
 		}
 		
 };
@@ -29,16 +29,18 @@ int main(){
 	
 	tollBooth toll_booth;
 	
-	while (True){
-		if (GetAsyncKeyState(VK_P) & 0x8000){
+	while (true){
+		if (GetAsyncKeyState('P') && 0x8000){
 			toll_booth.payingCar();
 		}
-		if (GetAsyncKeyState(VK_N) & 0x8000){
+		if (GetAsyncKeyState('N') && 0x8000){
 			toll_booth.nopayCar();
 		}
-		if (GetAsyncKeyState(VK_ESCAPE) & 0x8000){
+		if (GetAsyncKeyState(VK_ESCAPE) && 0x8000){
 			toll_booth.display();
 			return 0;
 		}
+		
+		Sleep(250);
 	}
 }
