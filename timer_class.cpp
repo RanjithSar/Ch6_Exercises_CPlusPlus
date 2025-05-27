@@ -45,8 +45,8 @@ class time{
 int main(){
 	
 	time t1;
-	const time t2(11:59:32);
-	const time t3(9:48:30);
+	const time t2(10,12,32);
+	const time t3(9,48,30);
 	
 	t1.display();
 	t2.display();
