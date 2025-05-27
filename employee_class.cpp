@@ -28,4 +28,20 @@ class employee{
 		}
 };
 
-int main(){}
+int main(){
+	
+	employee e1;
+	employee e2(4820,3000.00);
+	
+	e1.display();
+	e2.display();
+	
+	cout << "=================" << endl;
+	
+	e1.set_data();
+	
+	e1.display();
+	
+	return 0;
+	
+}
