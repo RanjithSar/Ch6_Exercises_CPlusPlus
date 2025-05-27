@@ -14,6 +14,11 @@ class employee{
 			this->emp_num = e_num;
 			this->comp = comp;
 		}
+		
+		void display() const{
+			printf("Employee number = %d\n", this->emp_num);
+			printf("Employee compensation = %.02f\n", this->comp);
+		}
 };
 
 int main(){}
