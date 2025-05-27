@@ -1,3 +1,18 @@
+/*
+* Chapter 6 Exercises Problem 1
+* -------------------------------
+* This program simulates a C++ integer with the
+* Int class. The Int can be set to the default of zero, or
+* set to a user-defined value. This Int can be displayed,
+* and another Int object can be added to it.
+*
+* The main function showcases the Int class functionality.
+* Two Ints are initialized to values other than the default 
+* (in this case 34 and 23), and these values are added to the 
+* uninitialized Int (the one initialized to the default of zero).
+* The results are outputted to the terminal.
+*/
+
 #include <iostream>
 using namespace std;
 
@@ -32,7 +47,7 @@ int main(){
 	cout << "============" << endl;
 	
 	val1.add_Int(val2);
-	val1.add_int(val3);
+	val1.add_Int(val3);
 	
 	val1.display();
 	
