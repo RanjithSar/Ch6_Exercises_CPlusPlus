@@ -16,19 +16,34 @@
 #include <iostream>
 using namespace std;
 
+// Class definition
 class Int{
 	
+	// Holds the variable that stores the value for the Int
 	private:
 		int value;
+		
 	public:
+	
+		/* Default value constructor */
 		Int(): value(0)
 		{}
+		
+		/* Constructor to manually initialize Int value. */
 		Int(int value){
 			this->value = value;
 		}
+		
+		/*
+		Function to display the Int's value to the console.
+		This function is constant so the value is not
+		accidentally modified.
+		*/
 		void display() const{
 			cout << this->value << endl;
 		}
+		
+		// Adds another Int object to the current one.
 		void add_Int(Int other){
 			this->value += other.value;
 		}
