@@ -54,24 +54,34 @@ class employee{
 
 int main(){
 	
-	employee e1;
-	employee e2(12859, 90000.00);
-	employee e3(e1);
+	/*
+	Three employee objects.
+	*/
+	employee e1; // Default initialization
+	employee e2(12859, 90000.00); // Pre-defined values
+	employee e3(e1); // Copies e1 by value
 	
+	// Displays them before any changes.
 	e1.display();
 	e2.display();
 	e3.display();
 	
 	cout << "=================" << endl;
 	
+	// Sets new values for e1.
 	e1.set_data();
 	
+	/*
+	Here, e1 will have the new values, while e3 will
+	still be 0 and 0.00 since e3 copies e1 by value.
+	*/
 	e1.display();
 	e2.display();
 	e3.display();
 	
 	cout << "=================" << endl;
 	
+	// Sets new values for e2.
 	e2.set_data();
 	
 	e1.display();
@@ -80,6 +90,7 @@ int main(){
 	
 	cout << "=================" << endl;
 	
+	// Sets new values for e3.
 	e3.set_data();
 	
 	e1.display();
