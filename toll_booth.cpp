@@ -11,25 +11,48 @@
 */
 
 #include <iostream>
-#include <windows.h>
+#include <windows.h> // To detect keypress and use Sleep()
 using namespace std;
 
 class tollBooth{
 	
+	/*
+	Stores the number of cars that passed and the
+	total amount of toll collected.
+	*/
 	private:
 		unsigned int num_cars;
 		double total;
 		
 	public:
+	
+		/*
+		Initializes a new toll booth.
+		*/
 		tollBooth(): num_cars(0), total(0.0)
 		{}
+		
+		/*
+		A car paid and passed the toll booth.
+		Toll is $0.50.
+		Increases both number of cars and total.
+		*/
 		void payingCar(){
 			this->num_cars++;
 			this->total += 0.50;
 		}
+		
+		/*
+		A car passed without paying. Only the 
+		number of cars is incremented.
+		*/
 		void nopayCar(){
 			this->num_cars++;
 		}
+		
+		/*
+		Displays the information onto the console.
+		*/
 		void display() const{
 			printf("Cars passed = %d\nTotal toll collected = $%.02f", this->num_cars, this->total);
 		}
