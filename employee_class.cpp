@@ -19,6 +19,13 @@ class employee{
 			printf("Employee number = %d\n", this->emp_num);
 			printf("Employee compensation = %.02f\n", this->comp);
 		}
+		
+		void set_data(){
+			cout << "Enter new employee id: ";
+			cin >> this->emp_num;
+			cout << "Enter new compensation: ";
+			cin >> this->comp;
+		}
 };
 
 int main(){}
