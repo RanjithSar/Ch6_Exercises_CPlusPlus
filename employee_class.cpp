@@ -17,23 +17,33 @@ using namespace std;
 
 class employee{
 	
+	// Each employee has an ID and a compensation.
 	private:
 		int emp_num;
 		float comp;
 		
 	public:
+	
+		// Default constructor.
 		employee(): emp_num(0), comp(0.0)
 		{}
+		
+		// User constructor.
 		employee(int e_num, float comp){
 			this->emp_num = e_num;
 			this->comp = comp;
 		}
 		
+		// Shows the employee data to the console.
 		void display() const{
 			printf("Employee number = %d\n", this->emp_num);
 			printf("Employee compensation = %.02f\n", this->comp);
 		}
 		
+		/* 
+		Asks the user for a new ID and compensation and
+		sets the attributes to those values.
+		*/
 		void set_data(){
 			cout << "Enter new employee id: ";
 			cin >> this->emp_num;
