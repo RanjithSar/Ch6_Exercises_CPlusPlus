@@ -84,20 +84,33 @@ class time{
 	
 };
 
+// Main method to test the class's functionality.
 int main(){
 	
+	// Uninitialized time object.
 	time t1;
+	
+	/*
+	Two constant, initialized time objects.
+	*/
 	const time t2(10,12,32);
 	const time t3(9,48,30);
 	
+	// Displays times before adding
 	t1.display();
 	t2.display();
 	t3.display();
 	
 	cout << "================" << endl;
 	
+	/*
+	t1 takes the values from t2 and t3 and
+	adds it together. This works because t2
+	and t3 are not directly being modified.
+	*/
 	t1.add_two_times(t2, t3);
 	
+	// Displays the final time of t1.
 	t1.display();
 	
 	return 0;
