@@ -20,9 +20,6 @@ class tollBooth{
 		}
 		void display() const{
 			printf("Cars passed = %d\nTotal toll collected = $%.02f", this->num_cars, this->total);
-			/*cout << "Cars passed = " << this->num_cars << "\n"
-				 << "Total toll collected = " << this->total << endl;
-			*/
 		}
 		
 };
