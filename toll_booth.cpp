@@ -2,4 +2,25 @@
 #include <windows.h>
 using namespace std;
 
-class tollBooth{};
+class tollBooth{
+	
+	private:
+		unsigned int num_cars;
+		double total;
+		
+	public:
+		tollBooth(): num_cars(0), total(0.0)
+		{}
+		void payingCar(){
+			this->num_cars++;
+			this->total += 0.50;
+		}
+		void nopayCar(){
+			this->num_cars++;
+		}
+		void display() const{
+			cout << "Cars passed = " << this->num_cars << "\n"
+				 << "Total toll collected = " < this->total << endl;
+		}
+		
+};
