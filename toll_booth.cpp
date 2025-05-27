@@ -19,8 +19,10 @@ class tollBooth{
 			this->num_cars++;
 		}
 		void display() const{
-			cout << "Cars passed = " << this->num_cars << "\n"
+			printf("Cars passed = %d\nTotal toll collected = $%.02f", this->num_cars, this->total);
+			/*cout << "Cars passed = " << this->num_cars << "\n"
 				 << "Total toll collected = " << this->total << endl;
+			*/
 		}
 		
 };
@@ -28,6 +30,9 @@ class tollBooth{
 int main(){
 	
 	tollBooth toll_booth;
+	
+	cout << "Welcome to the toll paying program. Press the 'p' key to count a \n"
+			"car that paid the $0.50 cent toll, and the 'n' key to count a car that did not." << endl;
 	
 	while (true){
 		if (GetAsyncKeyState('P') && 0x8000){
