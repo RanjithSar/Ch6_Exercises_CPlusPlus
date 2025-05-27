@@ -41,3 +41,23 @@ class time{
 		}
 	
 };
+
+int main(){
+	
+	time t1;
+	const time t2(11:59:32);
+	const time t3(9:48:30);
+	
+	t1.display();
+	t2.display();
+	t3.display();
+	
+	cout << "================" << endl;
+	
+	t1.add_two_times(t2, t3);
+	
+	t1.display();
+	
+	return 0;
+	
+}
