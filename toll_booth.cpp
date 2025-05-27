@@ -1,3 +1,15 @@
+/*
+* Chapter 6 Problem 2
+* --------------------
+* This problem simulates a toll booth with the tollBooth class.
+* Each toll booth counts the number of cars that passed by it and the 
+* total amount of toll collected. NOTE: not all cars that pass pay the toll.
+*
+* Each toll booth starts with 0 cars passed and $0.00 collected. The main
+* program uses key presses to count a car that paid, a car that did not pay, and
+* to show the toll booth information and exit the program.
+*/
+
 #include <iostream>
 #include <windows.h>
 using namespace std;
