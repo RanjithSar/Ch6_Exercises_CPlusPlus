@@ -1,3 +1,22 @@
+/*
+* Chapter 6 Problem 5
+* -------------------
+* This program simulates a date in the
+* MM/DD/YYYY format with the date class.
+* The month, day, and the year are stored as integer
+* attributes.
+*
+* By default, a date is set to 00/00/0000, but the
+* user can initialize their own date.
+*
+* Each date object can change their date values with the 
+* getdate function, which asks the user to enter a date in the
+* required format.
+*
+* Each date is displayed in the format with appropriate leading
+* zeros.
+*/
+
 #include <iostream>
 using namespace std;
 
