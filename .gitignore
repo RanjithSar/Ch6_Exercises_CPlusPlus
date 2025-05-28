@@ -1,2 +1,3 @@
 # Ignore testing executables
 *.exe
+employee_class_extension/*.exe
