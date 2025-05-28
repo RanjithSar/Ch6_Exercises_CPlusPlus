@@ -22,26 +22,35 @@ using namespace std;
 
 class date{
 	
+	// Attributes to store the components of a date.
 	private:
 		int month;
 		int day;
 		int year;
 		
 	public:
+	
+		// Default date.
 		date(): month(0), day(0), year(0)
 		{}
+		
+		// Initialize a date.
 		date(int month, int day, int year){
 			this->month = month;
 			this->day = day;
 			this->year = year;
 		}
 		
+		/*
+		Asks the user to set a date.
+		*/
 		void getdate(){
 			char bar = '/';
 			cout << "Enter a date in MM/DD/YYYY format: " << endl;
 			cin >> this->month >> bar >> this->day >> bar >> this->year;
 		}
 		
+		// Shows the date on the terminal.
 		void showdate() const{
 			printf("%02d/%02d/%04d\n", this->month, this->day, this->year);
 		}
