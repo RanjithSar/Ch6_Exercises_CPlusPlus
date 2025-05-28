@@ -4,7 +4,7 @@ class employee{
 	
 	private:
 	
-		static enum etype {labourer, secretary, manager, accountant};
+		static enum etype {NONE, labourer, secretary, manager, accountant};
 		
 		int emp_id;
 		float comp;
