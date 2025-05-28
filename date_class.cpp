@@ -16,6 +16,12 @@ class date{
 			this->day = day;
 			this->year = year;
 		}
+		
+		void getdate(){
+			char bar = '/';
+			cout << "Enter a date in MM/DD/YYYY format: " << endl;
+			cin >> this->month >> bar >> this->day >> bar >> this->year;
+		}
 	
 };
 
