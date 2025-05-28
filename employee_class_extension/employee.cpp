@@ -15,6 +15,26 @@ void employee::getemploy(){
 	cin >> this->comp;
 	cout << "Enter date of first employment: " << endl;
 	this->first_emp.getdate();
-	cout << "Enter type of employment: " << endl;
-	cin >> this->mytype;
+	
+	int emp_type;
+	cout << "Enter number to indicate type of employment.\n" 
+		 << "1. Labourer\n2. Secretary\n3. Manager\n4. Accountant" << endl;
+	cin >> emp_type;
+	
+	switch(emp_type){
+		case 1:
+			this->mytype = labourer;
+			break;
+		case 2:
+			this->mytype = secretary;
+			break;
+		case 3:
+			this->mytype = manager;
+			break;
+		case 4:
+			this->mytype = accountant;
+			break;
+		default:
+			this->mytype = NONE;
+	}
 }
