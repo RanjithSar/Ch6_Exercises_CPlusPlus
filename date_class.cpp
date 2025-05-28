@@ -24,9 +24,28 @@ class date{
 		}
 		
 		void showdate() const{
-			printf("%02d/%02d/%04d", this->month, this->day, this->year);
+			printf("%02d/%02d/%04d\n", this->month, this->day, this->year);
 		}
 	
 };
 
-int main(){}
+int main(){
+	
+	date myDate;
+	date current_date(5,28,2025);
+	
+	myDate.showdate();
+	current_date.showdate();
+	
+	cout << "===============" << endl;
+	
+	myDate.getdate();
+	
+	myDate.showdate();
+	current_date.showdate();
+	
+	cout << "===============" << endl;
+	
+	return 0;
+	
+}
