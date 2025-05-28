@@ -59,16 +59,22 @@ class date{
 
 int main(){
 	
+	// Create uninitialized date.
 	date myDate;
+	
+	// The current date when the program was written.
 	date current_date(5,28,2025);
 	
+	// Show the dates.
 	myDate.showdate();
 	current_date.showdate();
 	
 	cout << "===============" << endl;
 	
+	// Ask the user to set a date for myDate.
 	myDate.getdate();
 	
+	// Show the dates.
 	myDate.showdate();
 	current_date.showdate();
 	
