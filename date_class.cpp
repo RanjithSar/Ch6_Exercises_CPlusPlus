@@ -22,6 +22,10 @@ class date{
 			cout << "Enter a date in MM/DD/YYYY format: " << endl;
 			cin >> this->month >> bar >> this->day >> bar >> this->year;
 		}
+		
+		void showdate() const{
+			printf("%02d/%02d/%04d", this->month, this->day, this->year);
+		}
 	
 };
 
