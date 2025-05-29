@@ -5,6 +5,10 @@ using namespace std;
 location::location()
 {}
 
+location::location(double latitude, char lat_char, double longitude, char lon_char){
+	
+}
+
 void location::getlocation(){
 	cout << "Enter the latitude (N or S direction): \n";
 	this->latitude.getangle();
