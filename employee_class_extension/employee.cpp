@@ -38,3 +38,26 @@ void employee::getemploy(){
 			this->mytype = NONE;
 	}
 }
+
+void employee::showemploy() const{
+	cout << "Employee ID number: " << this->emp_id << endl;
+	printf("Employee yearly compensation: $%.02f\n", this->comp);
+	cout << "Employee date of first employment: ";
+	this->first_emp.showdate();
+	cout << endl;
+	cout << "Employee position: ";
+	switch(this->mytype){
+		case 1:
+			cout << "labourer" << endl;
+			break;
+		case 2:
+			cout << "secretary" << endl;
+			break;
+		case 3:
+			cout << "manager" << endl;
+			break;
+		case 4:
+			cout << "accountant" << endl;
+			break;
+	}
+}

@@ -8,4 +8,6 @@ int main(){
 	
 	e1.getemploy();
 	
+	e1.showemploy();
+	
 }

@@ -24,4 +24,6 @@ class employee{
 		
 		void getemploy();
 		
+		void showemploy() const;
+		
 };
