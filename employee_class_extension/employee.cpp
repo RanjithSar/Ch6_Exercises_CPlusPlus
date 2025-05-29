@@ -20,7 +20,7 @@ employee::employee(){
 void employee::getemploy(){
 	cout << "Enter employee id: " << endl;
 	cin >> this->emp_id;
-	cout << "Enter compensation: " << endl;
+	cout << "Enter yearly compensation: " << endl;
 	cin >> this->comp;
 	
 	/*
