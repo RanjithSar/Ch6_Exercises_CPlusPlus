@@ -11,3 +11,7 @@ angle::angle(int deg, int min, int sec, char dir){
 	this->seconds = sec;
 	this->direction = dir;
 }
+
+void angle::showangle() const{
+	printf("%02d\xF8%02d\'%02d\" %c", this->degrees, this->minutes, this->seconds, this->direction);
+}
