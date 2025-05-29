@@ -9,6 +9,7 @@ class angle{
 	public:
 		angle();
 		angle(int deg, int min, int sec, char dir);
+		void setangle(int deg, int min, int sec, char dir);
 		void showangle() const;
 		void getangle();
 	
