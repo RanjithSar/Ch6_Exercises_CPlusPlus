@@ -48,16 +48,18 @@ void employee::showemploy() const{
 	cout << "Employee position: ";
 	switch(this->mytype){
 		case 1:
-			cout << "labourer" << endl;
+			cout << "labourer\n" << endl;
 			break;
 		case 2:
-			cout << "secretary" << endl;
+			cout << "secretary\n" << endl;
 			break;
 		case 3:
-			cout << "manager" << endl;
+			cout << "manager\n" << endl;
 			break;
 		case 4:
-			cout << "accountant" << endl;
+			cout << "accountant\n" << endl;
 			break;
+		default:
+			cout << "NONE\n" << endl;
 	}
 }
