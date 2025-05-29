@@ -9,6 +9,6 @@ class location{
 	public:
 		location();
 		void getlocation();
-		void showlocaton() const;
+		void showlocation() const;
 	
-}
+};
