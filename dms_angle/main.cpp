@@ -1,23 +1,21 @@
-#include "angle.h"
+#include "location.h"
 #include <iostream>
 using namespace std;
 
 int main(){
 	
-	angle myAngle;
-	angle otherAngle(96,21,12,'W');
+	location myLocation;
 	
-	myAngle.showangle();
-	cout << "\n";
-	otherAngle.showangle();
-	cout << "\n";
+	myLocation.showlocation();
 	
-	cout << "===================" << endl;
+	cout << "=============" << endl;
 	
-	myAngle.getangle();
+	myLocation.getlocation();
 	
-	myAngle.showangle();
-	cout << "\n";
-	otherAngle.showangle();
-	cout << "\n";
+	cout << "=============" << endl;
+	
+	myLocation.showlocation();
+	
+	return 0;
+	
 }
