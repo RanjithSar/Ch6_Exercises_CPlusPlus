@@ -1,3 +1,20 @@
+/*
+* Chapter 6 Exercise 6
+* ---------------------
+* This program simulates an employee with additional features.
+* Each employee now has a date of first employment, represented by
+* a date class object, and the position they hold, represented by
+* an enum type variable.
+*
+* All employees are created as default employees. The only way to initialize
+* the employee is through the method getemploy().
+*
+* This program demonstrates the functionality of this employee class
+* with three employee objects. First, they are displayed; then, the user is
+* asked to initialize each one individually. Finally, the initialized employee
+* objects are displayed.
+*/
+
 #include "employee.h"
 #include <iostream>
 using namespace std;
