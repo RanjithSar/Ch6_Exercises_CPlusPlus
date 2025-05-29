@@ -8,7 +8,7 @@ class location{
 		
 	public:
 		location();
-		location(double latitude, char lat_char, double longitude, char lon_char);
+		location(double latitude, double longitude);
 		void getlocation();
 		void showlocation() const;
 	

@@ -18,7 +18,7 @@ void angle::showangle() const{
 	printf("%02d\xF8%02d\'%02d\" %c", this->degrees, this->minutes, this->seconds, this->direction);
 }
 
-void setangle(int deg, int min, int sec, char dir){
+void angle::setangle(int deg, int min, int sec, char dir){
 	this->degrees = deg;
 	this->minutes = min;
 	this->seconds = sec;
