@@ -15,14 +15,22 @@
 * objects are displayed.
 */
 
+/*
+Includes the employee class. 
+NOTE: the date class already comes with employee,
+so no need to include it explicitly.
+*/
 #include "employee.h"
+
 #include <iostream>
 using namespace std;
 
 int main(){
 	
+	// The three employee objects.
 	employee e1, e2, e3;
 	
+	// Displays each employee.
 	cout << "For employee 1: " << endl;
 	e1.showemploy();
 	
@@ -34,6 +42,7 @@ int main(){
 	
 	cout << "===============" << endl;
 	
+	// Asks the user to set each employee individually.
 	cout << "For employee 1: " << endl;
 	e1.getemploy();
 	
@@ -45,6 +54,7 @@ int main(){
 	
 	cout << "===============" << endl;
 	
+	// Displays the initialized employees.
 	cout << "For employee 1: " << endl;
 	e1.showemploy();
 	
