@@ -4,3 +4,10 @@ using namespace std;
 
 location::location()
 {}
+
+void location::getlocation(){
+	cout << "Enter the latitude (N or S direction): \n";
+	this->latitude.getangle();
+	cout << "Enter the longitutde (E or W direction): \n";
+	this->longitude.getangle();
+}
