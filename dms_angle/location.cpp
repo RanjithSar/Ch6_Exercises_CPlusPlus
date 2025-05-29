@@ -11,3 +11,12 @@ void location::getlocation(){
 	cout << "Enter the longitutde (E or W direction): \n";
 	this->longitude.getangle();
 }
+
+void location::showlocation() const{
+	cout << "latitude: ";
+	this->latitude.showangle();
+	cout << "\n";
+	cout << "longitude: ";
+	this->longitude.showangle();
+	cout << "\n";
+}
