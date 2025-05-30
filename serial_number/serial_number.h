@@ -1,10 +1,10 @@
-class serialNumber{
+class serial_number{
 	
 	private:
 		unsigned int serial_no;
 		
 	public:
-		serialNumber();
+		serial_number();
 		void showSerialNo() const;
 	
 };
