@@ -2,4 +2,10 @@
 #include <iostream>
 using namespace std;
 
-serial_number::count = 0;
+unsigned int serial_number::count = 0;
+
+serial_number::serial_number(){
+	count++;
+	unsigned int* pcount = &count;
+	this->serial_no = *pcount;
+}
