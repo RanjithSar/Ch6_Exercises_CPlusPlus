@@ -9,3 +9,7 @@ serial_number::serial_number(){
 	unsigned int* pcount = &count;
 	this->serial_no = *pcount;
 }
+
+void serial_number::showSerialNo() const{
+	printf("I am object number %03d.", this->serial_no);
+}
