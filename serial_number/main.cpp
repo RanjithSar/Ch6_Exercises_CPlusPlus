@@ -33,15 +33,41 @@ int main(){
 	s2.showSerialNo();
 	s3.showSerialNo();
 	
+	/*
+	Here we have a pointer array my_serial_arr and an
+	array my_other_serial_arr.
+	The array my_other_serial_arr gets 10 serial_number objects
+	already pre-initialized, with serial numbers from 4->14. This is
+	because my_serial_arr is an array of pointers that don't have any 
+	serial_number objects pointing to them. By the time indices in this array, 
+	do point to serial_number objects, they will be 10 more than those of my_other_serial_arr
+	since that array (my_other_serial_arr) gets initialized first.
+	*/
 	serial_number* my_serial_arr[10];
 	serial_number my_other_serial_arr[10];
 	
 	for (int i = 0; i < 10; i++){
+		
+		/*
+		Now we are making each element in my_serial_arr point to 
+		a new serial_number object allocated in the stack.
+		*/
 		my_serial_arr[i] = new serial_number;
+		
+		/*
+		This will result in prints like this:
+		I am object number 014.
+		I am object number 004.
+		as explained in the array initializations comment.
+		*/
 		my_serial_arr[i]->showSerialNo();
 		my_other_serial_arr[i].showSerialNo();
 	}
 	
+	/*
+	Over both arrays, 20 serial_number objects were created.
+	Therefore, this object will have serial number 24.
+	*/
 	serial_number sAfterLoop;
 	sAfterLoop.showSerialNo();
 	
