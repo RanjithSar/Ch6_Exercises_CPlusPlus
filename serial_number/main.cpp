@@ -1,3 +1,16 @@
+/*
+* Chapter 6 Problem 8
+* --------------------
+* This problem simulates a serial number based on 
+* the number of objects of that class. Each time an object
+* is created, the count is incremented by one, and the most
+* recent object's serial number is the value of that count.
+*
+* This main method demonstrates this functionality with individual
+* serial_number objects, an array of serial_number objects, and a 
+* pointer array of serial_number objects.
+*/
+
 #include "serial_number.h"
 #include <iostream>
 using namespace std;
