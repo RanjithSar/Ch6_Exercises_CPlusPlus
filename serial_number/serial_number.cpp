@@ -2,7 +2,7 @@
 #include <iostream>
 using namespace std;
 
-serial_number::count = 0;
+unsigned int serial_number::count = 0;
 
 serial_number::serial_number(){
 	serial_number::count++;
@@ -11,5 +11,5 @@ serial_number::serial_number(){
 }
 
 void serial_number::showSerialNo() const{
-	printf("I am object number %03d.", this->serial_no);
+	printf("I am object number %03d.\n", this->serial_no);
 }
