@@ -71,12 +71,14 @@ int main(){
 	serial_number sAfterLoop;
 	sAfterLoop.showSerialNo();
 	
+	/*
+	For the safety of the program, all pointers are deallocated
+	and set to nullptr.
+	*/
 	for (int i = 0; i < 10; i++){
 		delete my_serial_arr[i];
 		my_serial_arr[i] = nullptr;
 	}
-	
-	//delete[] my_serial_arr;
 	
 	return 0;
 	
