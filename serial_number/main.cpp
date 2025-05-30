@@ -11,13 +11,24 @@
 * pointer array of serial_number objects.
 */
 
+// Include the serial_number class
 #include "serial_number.h"
+
 #include <iostream>
 using namespace std;
 
 int main(){
 	
+	/*
+	Creates three serial_number objects.
+	The static variable count starts at 0.
+	After s1, it's 1, so s1's serial number is 1.
+	After s2, it's 2, so s2's serial number is 2.
+	The same logic applies for s3 and so on.
+	*/
 	serial_number s1, s2, s3;
+	
+	// Display the serial numbers.
 	s1.showSerialNo();
 	s2.showSerialNo();
 	s3.showSerialNo();
